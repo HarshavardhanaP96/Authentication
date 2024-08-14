@@ -7,10 +7,7 @@ const PORT = 3000;
 
 app.use(express.json());
 
-connectMongodb(
-  "mongodb+srv://Harshavardhana:WJStADxHSGCqfTX9@cluster0.yos0g24.mongodb.net/",
-  { dbName: "Interview_Test" }
-); //url
+connectMongodb(process.env.DATABASE_URL, { dbName: "Interview_Test" }); //url
 
 app.use("/api/v1/auth", authRouter);
 
