@@ -1,0 +1,7 @@
+node_modules/
+
+.env
+
+Secure_Signing_Algorithm.txt
+
+The_JWT_Handbook.pdf
